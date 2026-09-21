@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Edit a book</title>
+    </head>
+    <body>
+        <form method ="POST">
+            {% crs_token %}
+            <lable>book title</lable>
+            <input type ="text" name="title" value="{{book.title}}" required>
+            <br><br>
+            <lable>Author tittle</lable>
+            <input type="text" name="Author" value="{{book.Authoe}}" required>
+            <br><br>
+            <lable>Catageory</lable>
+            <input type="text" name="Catageory"value="{{book.Catageory}}" required>
+            <br><br>
+            <lable>Quntity</lable>
+            <input type="numder" name="Quntity"value="{{book.Quntity}}" required>
+            <br><br>
+            <button type="Submit">update book</button>
+        </form>
+        <br>
+        <a href ="\">back to home</a>
+    </body>
+</html>           
+           
